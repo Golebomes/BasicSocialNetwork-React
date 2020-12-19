@@ -1,0 +1,21 @@
+.post {
+    display: grid;
+    grid-template-areas: "a t";
+    grid-template-columns: 2fr 10fr;
+    padding: 15px;
+}
+
+.post img {
+    width: 60px;
+  }
+.avatar {
+    grid-area: a;
+}
+.text{
+    grid-area: t;
+}
+
+.textPost {
+    grid-area: t;
+    margin-left: 10px;
+}

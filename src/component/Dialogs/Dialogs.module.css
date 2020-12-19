@@ -1,0 +1,28 @@
+.Dialogs {
+    display: grid;
+
+    grid-template-columns: 2fr 10fr;
+}
+
+.DialogItems {
+
+    padding: 20px;
+}
+
+.DialogItem {
+    padding: 10px;
+}
+
+.Chats {
+
+    padding: 20px;
+}
+
+.Chat {
+    padding: 10px;
+
+}
+
+.Text {
+
+}
