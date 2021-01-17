@@ -21,6 +21,12 @@ export const usersAPI = {
     },
     unfollow(userId) {
         return instance.delete(`https://social-network.samuraijs.com/api/1.0/follow/${userId}`)
+    },
+    auth() {
+        return instance.get(`auth/me`)
+    },
+    getProfileUser(userId) {
+        return instance.get(`profile/${userId}`)
     }
 }
 

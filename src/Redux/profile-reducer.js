@@ -1,3 +1,6 @@
+import {usersAPI} from "../api/api";
+import {toggleFollowingProgress, unfollow} from "./users-reducer";
+
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST = 'UPDATE-NEW-POST';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
@@ -54,6 +57,19 @@ export let updateNewPostActionCreator = (text) => {
     return {
         type: UPDATE_NEW_POST,
         text: text
+    }
+}
+
+export const getProfileUserThunkCreator = (userId) => {
+    return (dispatch) => {
+        //let userId = userId;
+        if (!userId) {
+            userId = 2;
+        }
+
+        usersAPI.getProfileUser(userId).then(response => {
+            dispatch(setUserProfile(response.data));
+        })
     }
 }
 
