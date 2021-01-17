@@ -7,15 +7,11 @@
     <list default="true" id="af2e2ef8-91ba-4e30-bfe3-da4aedd5bd10" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/users-reducer.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/StoreContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Header/HeaderContainer.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Users/Users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Users/users.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -25,6 +21,8 @@
       <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/message-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/message-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/users-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.module.css" afterDir="false" />
@@ -32,6 +30,8 @@
       <change beforePath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +120,7 @@
       <workItem from="1610434781464" duration="128000" />
       <workItem from="1610434949395" duration="9399000" />
       <workItem from="1610538766715" duration="4965000" />
-      <workItem from="1610561326627" duration="11700000" />
+      <workItem from="1610561326627" duration="15576000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ import style from "./users.module.css";
 import userPhoto from "../../assets/UsersDefaultPhoto.jpg";
 import {NavLink} from "react-router-dom";
 import axios from "axios";
+import {usersAPI} from "../../api/api";
 
 let Users = (props) => {
 
@@ -25,7 +26,7 @@ let Users = (props) => {
             props.users.map(u => <div key={u.id} className={style.block}>
                 <span>
                     <div>
-                        <NavLink to={'/profile/'+ u.id}>
+                        <NavLink to={'/profile/' + u.id}>
                         <img src={u.photos.small != null ? u.photos.small : userPhoto}
                              className={style.userPhoto}/>
                         </NavLink>
@@ -33,35 +34,12 @@ let Users = (props) => {
                     <div>
                         {u.followed
                             ? <button disabled={props.followingInProgress} onClick={() => {
-                                props.toggleFollowingProgress(true);
-                                axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,{
-                                    withCredentials: true,
-                                    headers: {
-                                        "API-KEY": '2c166ae1-f751-44b5-a004-440a069db72a'
-                                    }
-                                })
-                                    .then(response => {
-                                    if(response.data.resultCode === 0) {
-                                        props.unfollow(u.id);
-                                    }
-                                    props.toggleFollowingProgress(false);
-                                })
+                                props.unfollowThunkCreator(u.id);
+
 
                             }}>Unfollow</button>
                             : <button disabled={props.followingInProgress} onClick={() => {
-                                props.toggleFollowingProgress(true);
-                                axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,{},{
-                                    withCredentials: true,
-                                    headers: {
-                                        "API-KEY": '2c166ae1-f751-44b5-a004-440a069db72a'
-                                    }
-                                })
-                                    .then(response => {
-                                        if(response.data.resultCode === 0) {
-                                            props.follow(u.id);
-                                        }
-                                        props.toggleFollowingProgress(false);
-                                    })
+                                props.followThunkCreator(u.id);
 
 
                             }}>Follow</button>}
