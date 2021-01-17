@@ -1,0 +1,23 @@
+.userPhoto {
+    width: 100px;
+    height: 100px;
+}
+
+.block {
+    padding: 40px;
+
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+/*.users {*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+.preloader {
+    width: 200px;
+    height: 200px;
+}

@@ -1,11 +1,14 @@
 import './App.css';
 import React from 'react';
-import Header from './component/Header/Header';
 import NavBar from './component/NavBar/NavBar';
 import Dialogs from "./component/Dialogs/Dialogs";
 import Profile from './component/Profile/Profile';
 
 import {BrowserRouter, Route} from "react-router-dom";
+import DialogsContainer from "./component/Dialogs/DialogsContainer";
+import UsersContainer from "./component/Users/UsersContainer";
+import ProfileContainer from "./component/Profile/ProfileContainer";
+import HeaderContainer from "./component/Header/HeaderContainer";
 
 
 const App = (props) => {
@@ -14,21 +17,13 @@ const App = (props) => {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
-                <Header/>
+                <HeaderContainer/>
                 <NavBar/>
                 <div className='app-wrapper-content'>
 
-                    <Route path='/messages' render={() => <Dialogs
-                        DialogData={props.DialogData}
-                        ChatData={props.ChatData}
-                        dispatch={props.dispatch}
-                        newMessage={props.newMessage}
-                    />}/>
-                    <Route path='/profile' render={() => <Profile
-                        PostData={props.PostData} dispatch={props.dispatch}
-                        newPostText={props.newPostText}
-                    />}/>
-
+                    <Route path='/messages' render={() => <DialogsContainer/>}/>
+                    <Route path='/profile/:userId?' render={() => <ProfileContainer/>}/>
+                    <Route path='/users' render={() => <UsersContainer/>}/>
                 </div>
             </div>
         </BrowserRouter>

@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Dialogs.module.css';
 import {NavLink} from "react-router-dom";
-import {sendMessageCreator, updateMessageBodyCreator} from "../../Redux/message-reducer";
 
 const DialogItem = (props) => {
     return (
@@ -21,18 +20,18 @@ const Chat = (props) => {
 
 
 const Dialogs = (props) => {
-
     let DialogElements = props.DialogData.map(dialog => <DialogItem name={dialog.name}/>);
     let ChatElements = props.ChatData.map(c => <Chat text={c.text}/>);
     let newSendElement = React.createRef();
 
     let onMessageChange = (e) => {
         let text = e.target.value;
-        props.dispatch(updateMessageBodyCreator(text));
+        props.onMessageChange(text);
     }
 
     let Send =() => {
-        props.dispatch(sendMessageCreator());
+        props.Send();
+
     }
     return (
 
