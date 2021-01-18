@@ -5,6 +5,7 @@ import StoreContext from "../../StoreContext";
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
 import {withAuthRedirect} from "../../Hoc/withAuthRedirect";
+import {compose} from "redux";
 //import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
 //import mapDispatchToProps from "react-redux/lib/connect/mapDispatchToProps";
 
@@ -49,9 +50,8 @@ let mapDispatchToProps = (dispatch) => {
     }
 }
 
-let withAuthRedirectComponent = withAuthRedirect(Dialogs);
-
-const DialogsContainer = connect(mapStateToProps,mapDispatchToProps)(withAuthRedirectComponent);
-
-
-export default DialogsContainer;
+export default compose(
+    connect(mapStateToProps,mapDispatchToProps),
+    withAuthRedirect
+)(Dialogs)
+;
