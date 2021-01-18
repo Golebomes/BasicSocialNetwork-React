@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af2e2ef8-91ba-4e30-bfe3-da4aedd5bd10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Hoc/withAuthRedirect.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StoreContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Login/login.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Users/users.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -22,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/src/Redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/users-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/HeaderContainer.jsx" afterDir="false" />
@@ -32,7 +33,6 @@
       <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <workItem from="1610434781464" duration="128000" />
       <workItem from="1610434949395" duration="9399000" />
       <workItem from="1610538766715" duration="4965000" />
-      <workItem from="1610561326627" duration="19226000" />
+      <workItem from="1610561326627" duration="26057000" />
     </task>
     <servers />
   </component>

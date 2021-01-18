@@ -1,6 +1,8 @@
 import React from 'react';
 import s from './Dialogs.module.css';
-import {NavLink} from "react-router-dom";
+import {NavLink, Redirect} from "react-router-dom";
+//import {Redirect} from 'react-router-dom';
+
 
 const DialogItem = (props) => {
     return (
@@ -20,6 +22,7 @@ const Chat = (props) => {
 
 
 const Dialogs = (props) => {
+
     let DialogElements = props.DialogData.map(dialog => <DialogItem name={dialog.name}/>);
     let ChatElements = props.ChatData.map(c => <Chat text={c.text}/>);
     let newSendElement = React.createRef();
@@ -33,6 +36,9 @@ const Dialogs = (props) => {
         props.Send();
 
     }
+    //checking is Authorized and if no redirect
+    //if(!props.isAuth) return <Redirect to={"/login"}/>
+
     return (
 
         <div className={s.Dialogs}>
