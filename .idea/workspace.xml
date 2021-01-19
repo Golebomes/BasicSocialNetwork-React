@@ -9,6 +9,7 @@
       <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Login/login.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileStatus.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/component/Users/users.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -120,7 +121,7 @@
       <workItem from="1610434781464" duration="128000" />
       <workItem from="1610434949395" duration="9399000" />
       <workItem from="1610538766715" duration="4965000" />
-      <workItem from="1610561326627" duration="27248000" />
+      <workItem from="1610561326627" duration="33251000" />
     </task>
     <servers />
   </component>

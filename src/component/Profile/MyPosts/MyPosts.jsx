@@ -20,6 +20,7 @@ const MyPosts = (props) => {
     }
     return (
         <div className={s.Posts}>
+            <h1>My Posts</h1>
             <div>
                 <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText}></textarea>
                 <button onClick={OnAddPost}>Add post</button>
